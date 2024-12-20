@@ -105,7 +105,6 @@ main {
   font-size: 18px;
   font-variation-settings: 'wght' var(--font_weight_l);
   line-height: 21.78px;
-  padding-block: 3px;
   padding-inline: 10px 24px;
 }
 
