@@ -224,14 +224,13 @@ main {
   filter: contrast(200%);
 }
 
-.filter_grayscale {
-  filter: grayscale(0.8);
-}
-
 .filter_sepia {
   filter: sepia(0.9);
 }
 
+.filter_invert {
+  filter: invert(1);
+}
 .filter_hue_rorate {
   filter: hue-rotate(180deg);
 }
@@ -240,8 +239,8 @@ main {
   filter: saturate(0.8);
 }
 
-.filter_invert {
-  filter: invert(1);
+.filter_grayscale {
+  filter: grayscale(0.8);
 }
 
 .filter_few {
