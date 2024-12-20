@@ -11,33 +11,33 @@
 */
 
 .like-icon .center_svg {
-  transition: fill 0.3s ease 0.03s;
+  transition: fill 0.3s linear 0.03s;
   fill: transparent;
 }
 
 .like-icon .fill_svg {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .center_svg {
   fill: var(--center_svg_path_hover);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .fill_svg {
   fill: var(--fill_svg_path_hover);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .center_svg {
   fill: var(--center_svg_path_active);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .fill_svg {
   fill: var(--fill_svg_path_active);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon .outline_svg {
@@ -47,21 +47,21 @@
 
 .like-icon.is-liked .outline_svg {
   fill: var(--outline_svg_path_liked);
-  transition: fill 0.3s ease 0.06s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .center_svg {
   fill: var(--center_svg_path_liked);
-  transition: fill 0.3s ease;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .fill_svg {
   fill: var(--fill_svg_path_liked);
-  transition: fill 0.3s ease 0.05s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked {
-  animation: big-heart ease-in 1 0.3s 0.1s;
+  animation: big-heart linear 1 0.3s 0.1s;
 }
 
 .sparks {
@@ -69,7 +69,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks ease-in 1 0.3s 0.3s;
+  animation: sparks linear 1 0.3s 0.3s;
 }
 
 @keyframes big-heart {
@@ -93,11 +93,11 @@
 }
 
 .button::before {
+  transition: transform 0.5s ease-in-out;
   transform-origin: left;
   transform: scaleX(0);
 }
 
 .button:hover::before {
-  transition: transform 0.5s ease-in-out;
   transform: scaleX(1);
 }
