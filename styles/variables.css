@@ -1,1 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main_font: "Inter-Variable", sans-serif;
+  --accent_font: "PressStart2P", fantasy;
+  --font_weight_l: 700;
+  --font_weight_m: 400;
+  --text_color: #000;
+  --main_color: #000;
+  --button_color: #fff;
+  --header_and_main_inline_size: clamp(375px, calc(700% / 1440 * 100), 700px);
+  --heder_logo_font_size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);
+  --header_title_font_size: clamp(0.875rem, 0.6798rem + 0.8419vw, 1.4375rem);
+  --dialog_window_inline_size: clamp(341px, calc(696% / 1440 * 100), 353px);
+  --outline_svg_path: #000;
+  --outline_svg_path_liked: #f00;
+  --fill_svg_path: none;
+  --fill_svg_path_hover: #000;
+  --fill_svg_path_active: #f00;
+  --fill_svg_path_liked: #f00;
+  --center_svg_path: none;
+  --center_svg_path_hover: #000;
+  --center_svg_path_active: #f00;
+  --center_svg_path_liked: #f00;
+  --sparks: #f00;
+}

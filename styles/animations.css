@@ -9,3 +9,95 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.like-icon .center_svg {
+  transition: fill 0.3s ease 0.03s;
+  fill: transparent;
+}
+
+.like-icon .fill_svg {
+  fill: transparent;
+  transition: fill 0.3s ease;
+}
+
+.like-icon:hover .center_svg {
+  fill: var(--center_svg_path_hover);
+  transition: fill 0.3s ease;
+}
+
+.like-icon:hover .fill_svg {
+  fill: var(--fill_svg_path_hover);
+  transition: fill 0.3s ease 0.05s;
+}
+
+.like-icon:active .center_svg {
+  fill: var(--center_svg_path_active);
+  transition: fill 0.3s ease;
+}
+
+.like-icon:active .fill_svg {
+  fill: var(--fill_svg_path_active);
+  transition: fill 0.3s ease 0.05s;
+}
+
+.like-icon .outline_svg {
+  fill: var(--outline_svg_path);
+  transition: fill 0.1s linear;
+}
+
+.like-icon.is-liked .outline_svg {
+  fill: var(--outline_svg_path_liked);
+  transition: fill 0.3s ease 0.06s;
+}
+
+.like-icon.is-liked .center_svg {
+  fill: var(--center_svg_path_liked);
+  transition: fill 0.3s ease;
+}
+
+.like-icon.is-liked .fill_svg {
+  fill: var(--fill_svg_path_liked);
+  transition: fill 0.3s ease 0.05s;
+}
+
+.like-icon.is-liked {
+  animation: big-heart ease-in 1 0.3s 0.1s;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks ease-in 1 0.3s 0.3s;
+}
+
+@keyframes big-heart {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.button::before {
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.button:hover::before {
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(1);
+}
