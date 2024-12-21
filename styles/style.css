@@ -166,7 +166,7 @@ main {
   background-color: transparent;
   inline-size: 38px;
   block-size: 38px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   margin-inline-end: 6px;
   padding: 0;
   display: flex;
@@ -181,7 +181,6 @@ main {
 }
 
 .card__icon-button:focus-visible {
-  outline: none;
   border: 2px solid var(--main_color);
 }
 
@@ -225,13 +224,14 @@ main {
   filter: contrast(200%);
 }
 
+.filter_grayscale {
+  filter: grayscale(0.8);
+}
+
 .filter_sepia {
   filter: sepia(0.9);
 }
 
-.filter_invert {
-  filter: invert(1);
-}
 .filter_hue_rorate {
   filter: hue-rotate(180deg);
 }
@@ -240,8 +240,8 @@ main {
   filter: saturate(0.8);
 }
 
-.filter_grayscale {
-  filter: grayscale(0.8);
+.filter_invert {
+  filter: invert(1);
 }
 
 .filter_few {
@@ -302,7 +302,7 @@ button:hover {
   z-index: 4;
 }
 
-.dialog_window .size_svg {
+.dialog_window .size-svg {
   width: 39px;
   height: 39px;
 }
@@ -362,12 +362,10 @@ dialog::backdrop {
     margin-block-start: 2px;
   }
 
-  .size_svg {
+  .size-svg {
     width: 28px;
     height: 28px;
   }
-
-
 }
 
 
