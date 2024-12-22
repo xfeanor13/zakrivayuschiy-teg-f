@@ -88,7 +88,7 @@ main {
   flex-direction: column;
   border: 2px solid #000;
   background-color: #fff;
-  justify-content: flex-end;
+  justify-content: flex-end;f
   position: relative;
 }
 
@@ -106,6 +106,7 @@ main {
   font-variation-settings: 'wght' var(--font_weight_l);
   line-height: 21.78px;
   padding-inline: 10px 24px;
+border-block-end: 2px solid #000;
 }
 
 .image_and_from_author {
@@ -158,6 +159,7 @@ main {
   font-size: 18px;
   line-height: 21px;
   font-variation-settings: 'wght' var(--font_weight_m);
+border-block-start: 2px solid #000;
 }
 
 .card__icon-button {
